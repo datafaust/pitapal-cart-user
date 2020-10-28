@@ -1,0 +1,15 @@
+.title {
+    align-items: center;
+    text-align: center;
+}
+
+
+.addContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.addButton {
+    float: right;
+}
+  
