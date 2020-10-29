@@ -47,9 +47,7 @@ export default class SignUp extends Component {
 
   addCustomer = (uid) => {
     console.log('signing up with...',
-      this.state.fname, this.state.lname, this.state.phone,
-      this.state.email, this.state.cname, this.state.address,
-      this.state.city_id)
+      this.state.fname, this.state.lname, this.state.phone,this.state.email,this.state.city_id)
     let sqlStamp = moment().utcOffset('-0400').format("YYYY-MM-DD HH:mm:ss").substr(0, 18) + '0';
 
     fetch(

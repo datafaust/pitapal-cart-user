@@ -14,8 +14,8 @@ import Orders from './pages/Orders';
 import Land from './pages/Land';
 import { auth } from './services/firebase';
 
-//global.api = 'https://pitapal.metis-data.site'
-global.api = 'http://localhost:3008';
+global.api = 'https://pitapal.metis-data.site'
+//global.api = 'http://localhost:3008';
 
 
 function PrivateRoute({ component: Component, authenticated, ...rest }) {
