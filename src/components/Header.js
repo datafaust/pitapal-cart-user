@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { auth } from '../services/firebase';
+import "./header.css";
 
 function Header() {
   return (
     <header>
-      <nav className="navbar navbar-expand-md navbar-light bg-light">
+      <nav className="navbar navbar-expand-md navbar-dark navbar-custom">
         <Link className="navbar-brand" to="/">PitaPal</Link>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
@@ -17,6 +18,7 @@ function Header() {
               <Link className="nav-item nav-link" to="/carts">Manage my Carts</Link>
               <Link className="nav-item nav-link" to="/menus">Manage my Menus</Link>
               <Link className="nav-item nav-link" to="/orders">Order Queue</Link>
+              <Link className="nav-item nav-link" to="/">Contact Us</Link>
               <button className="btn btn-primary" onClick={() => auth().signOut()}>Logout</button>
             </div>
             : <div className="navbar-nav">
